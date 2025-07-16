@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surgery Saathi</title>
+  <link rel="stylesheet" href="surgery.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <div class="top-bar">
+    <div class="left-info">
+      <span><i class="fas fa-phone"></i> +918882852726</span>
+    </div>
+    <div class="right-info">
+    <a href="mailto:info@surgerysaathi.com"><i class="fas fa-envelope"></i> info@surgerysaathi.com</a>
+      
+      <div class="social-icons">
+  <a href="https://www.facebook.com/people/Surgerysaathi/61568769683885/?rdid=Q9RXfJYkxWbkE4WR&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F186Hhz2LZt%2F" 
+     class="facebook" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com/surgerysaathi/?igsh=dnQ0YTBub2RxZHd4#" 
+     class="instagram" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+    </div>
+  </div>
+<nav class="navbar">
+  <div id="logo">
+    <img src="img/surgery-logg.webp" alt="Surgery Saathi Logo" />
+  </div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Nav Links -->
+  <ul class="nav-links" id="navLinks">
+  <li class="nav-item dropdown">
+  <a href="#" class="nav-link">Service <i class="fas fa-chevron-down"></i></a>
+  <ul class="dropdown-menu">
+    <li><a href="#rhinoplasty">Rhinoplasty</a></li>
+    <li><a href="#gynaecomastia">Gynaecomastia</a></li>
+    <li><a href="#lipoma">Lipoma Removal</a></li>
+    <li><a href="#ophthalmology">Ophthalmology</a></li>
+  </ul>
+</li>
+
+
+    
+    <li class="nav-item"><a href="#">About Us</a></li>
+    <li class="nav-item"><a href="#">Contact Us</a></li>
+    <li class="nav-item appointment-desktop"><a href="#appointment-form" class="appointment-btn">Book an Appointment</a></li>
+  </ul>
+
+  <!-- Appointment button for mobile -->
+   
+ <a href="#appointment-form" class="appointment-btn appointment-mobile">Book an Appointment</a>
+
+</nav>
+</header>
+
+  <section class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Your Journey to a More Confident You Starts Here</h1>
+      <p>Surgery Saathi offers safe and professional cosmetic surgery to help you look your best. Our experienced doctors are dedicated to giving you great results with the care you deserve.</p>
+      <div class="cta-container">
+  <div class="cta-phone">
+    <i class="fas fa-phone-alt"></i> +918882852726
+  </div>
+  <button class="consultation-btn">Schedule Your Consultation Today!</button>
+</div>
+     
+    </div>
+  </section>
+<section id="appointment-form" style="background-color: #f8f9fa; padding: 40px 0;">
+  <div style="max-width: 1200px; margin: auto; padding: 0 20px;">
+
+    <form style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between;">
+      
+      <!-- First Name -->
+      <div style="flex: 1; min-width: 200px;">
+        <label style="display: block; font-weight: 500; margin-bottom: 5px;">First Name</label>
+        <input type="text" placeholder="Enter Name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+
+      <!-- Phone Number -->
+      <div style="flex: 1; min-width: 200px;">
+        <label style="display: block; font-weight: 500; margin-bottom: 5px;">Phone Number</label>
+        <input type="tel" placeholder="Phone Number" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+
+      <!-- Select Category -->
+      <div style="flex: 1; min-width: 200px;">
+        <label style="display: block; font-weight: 500; margin-bottom: 5px;">Select Category</label>
+        <select name="category" id="category" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px 15px;
+  border: 2px solid #00c853;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f9f9f9;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' fill=\'%2300c853\' viewBox=\'0 0 16 16\'><path d=\'M4.646 6.646a.5.5 0 0 1 .708 0L8 9.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z\'/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+">
+
+          <option selected disabled>Select Category</option>
+          <!-- You will add your options here -->
+           <option value="Rhinoplasty">Rhinoplasty
+           </option>
+            <option value="septoplasty">Septoplasty
+           </option>
+            <option value="Lipoma">Lipoma
+           </option>
+           <option value="Gynecomastia">Gynecomastia
+           </option>
+           <option value="Ophthalmology">Ophthalmology
+           </option>
+           <option value="Lasik Surgery">Lasik Surgery
+           </option>
+           <option value="cataract Surgery">Catarct Surgery
+           </option>
+           <option value="ICL">ICL(Implantable Collamer Lens)Treatment
+           </option>
+           <option value="Glaucoma">Glaucoma Treatment
+           </option>
+           <option value="corneal">Corneal Surgery
+           </option>
+           <option value="pediatrics eye care">Pediatrics eye care
+           </option>
+           <option value="refractive lens exchange">(RLE)Refractive Lens Exchange
+           </option>
+           <option value="pediatrics eye care">Pediatrics eye care
+           </option>
+<option value="hair Transplant">Hair Transplant
+           </option>
+           <option value="face">Face
+           </option>
+           <option value="body">Body
+           </option>
+           <option value="Skin">Skin
+           </option>
+           <option value="liposuction">liposuction
+           </option>
+           <option value="Breast(implant)">Breast(implant)
+           </option>
+           <option value="Gynaeocolgy">Gynaeocolgy
+           </option>
+        </select>
+      </div>
+
+      <!-- Button -->
+      <div style="min-width: 150px; align-self: flex-end;">
+        <button type="submit"
+  style="padding: 12px 24px; background-color: #007bff; color: white; border: none; border-radius: 6px; font-weight: 600; font-size: 16px; cursor: pointer; transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;"
+  onmouseover="this.style.backgroundColor='#0056b3'; this.style.transform='scale(1.03)'; this.style.boxShadow='0 4px 10px rgba(0, 123, 255, 0.3)'"
+  onmouseout="this.style.backgroundColor='#007bff'; this.style.transform='scale(1)'; this.style.boxShadow='none'">
+  Get Care Now
+</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+<!-- About Us Section -->
+<section style="display: flex; justify-content: center; align-items: center; padding: 80px 10%; background: #ffffff; gap: 40px; flex-wrap: wrap; font-family: 'Segoe UI', sans-serif;">
+
+  <!-- Left Image -->
+  <div style="flex: 1; min-width: 300px;">
+    <img src="img/surgery feedback.jpg" alt="Surgery" style="width: 100%; max-width: 480px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+  </div>
+
+  <!-- Right Text -->
+  <div style="flex: 1; min-width: 300px;">
+    <h5 style="color: #555; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-bottom: 8px;">About Us</h5>
+    <h2 style="font-size: 32px; font-weight: 700; color: #222; margin-bottom: 20px;">Best Surgery Center in India</h2>
+
+    <p id="aboutText" style="color: #444; line-height: 1.8; font-size: 16px;">
+      Surgery Saathi is your trusted partner in surgical care. We specialize in a variety of procedures, offering personalized support tailored to your unique needs. Our clinic combines the latest medical advancements with a compassionate approach, ensuring exceptional outcomes and prioritizing your safety. 
+      <span id="moreText" style="display: none;">
+        From your initial consultation to post-operative care, we are dedicated to making your experience seamless and reassuring. Our skilled team is here to answer your questions and provide the support you need at every step. At Surgery Saathi, your well-being is our top priority, and we are committed to delivering the highest standards of care to enhance your health and confidence.
+      </span>
+    </p>
+
+    <a id="readMoreBtn" style="display: inline-block; margin-top: 12px; color: #007BFF; cursor: pointer; font-weight: 500; text-decoration: none;">
+      Read More
+    </a>
+  </div>
+</section>
+</section>
+<!-- Our Services Section -->
+<section style="padding: 60px 20px; background-color: #f9f9f9;">
+  <div style="max-width: 1200px; margin: auto; text-align: center;">
+    <h2 style="font-size: 28px; margin-bottom: 40px; font-weight: 600; color: #333;">Our Services</h2>
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+      
+    <!-- Service Item -->
+<div class="doctor-consultation-icon">
+  <div class="icon-circle">
+    <img src="img/doctor consultation.png" alt="Doctor Consultation">
+  </div>
+  <p>Doctor Consultation</p>
+</div>
+
+      <div style="flex: 1; min-width: 150px;">
+        <div style="width: 80px; height: 80px; margin: auto; background-color: #e0f2ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+          <img src="img/second opinion.png" alt="Second Opinion" style="height: 40px;">
+        </div>
+        <p style="font-size: 16px; color: #333;">Second Opinion</p>
+      </div>
+
+      <div style="flex: 1; min-width: 150px;">
+        <div style="width: 80px; height: 80px; margin: auto; background-color: #e0f2ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+          <img src="img/medical loan.png" alt="Medical Loan" style="height: 40px;">
+        </div>
+        <p style="font-size: 16px; color: #333;">Medical Loan</p>
+      </div>
+
+      <div style="flex: 1; min-width: 150px;">
+        <div style="width: 80px; height: 80px; margin: auto; background-color: #e0f2ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+          <img src="img/insurace assistance.png" alt="Insurance Assistance" style="height: 40px;">
+        </div>
+        <p style="font-size: 16px; color: #333;">Insurance Assistance</p>
+      </div>
+
+      <div style="flex: 1; min-width: 150px;">
+        <div style="width: 80px; height: 80px; margin: auto; background-color: #e0f2ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+          <img src="img/post surgery care.png" alt="Post Surgery Care" style="height: 40px;">
+        </div>
+        <p style="font-size: 16px; color: #333;">Post Surgery Care</p>
+      </div>
+
+      <div style="flex: 1; min-width: 150px;">
+        <div style="width: 80px; height: 80px; margin: auto; background-color: #e0f2ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+          <img src="img/care assistant.png" alt="Care Assistance" style="height: 40px;">
+        </div>
+        <p style="font-size: 16px; color: #333;">Care Assistance</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- Hidden Section (Initially Hidden) -->
+<div id="doctorConsultationSection" style="display: none; padding: 40px 20px; background-color: #ffffff; border-top: 1px solid #eee;">
+  <div style="max-width: 1000px; margin: auto;">
+    <h3 style="text-align: center; margin-bottom: 20px; color: #007bff;">Doctor Consultation Services at Surgery Sathi</h3>
+    <p style="text-align: center; margin-bottom: 30px; color: #555;">Explore our top consultations including cosmetic, eye, hair, and general surgery. Talk to trusted specialists now.
+      Surgery Sathi offers expert consultations for a range of specialised procedures to enhance your health and well-being. Our experienced consultants are here to guide you through the decision-making process,providing you with comprehensive information and recommendations tailored to your needs.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <div style="width: 200px;">
+        <img src="img/Rhinoplasty-1.jpg" alt="Nose" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Nose Surgery</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/hair transplant.avif" alt="Hair" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Hair Transplant</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/opthamology.jpg" alt="Eye" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Ophthalmology</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/hair transplant.avif" alt="Hair" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Hair Transplant</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/gynaecology.jpg" alt="Hair" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Gynaeocolgy</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/skin.jpg" alt="Hair" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Skin</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/face.jpg" alt="Hair" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Face</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/body.jpg" alt="Hair" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Body</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/breast.jpg" alt="Hair" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Breast</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/liposuction.jpg" alt="Hair" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Liposuction</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/lipoma removal.jpg" alt="Hair" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Lipoma Removal</p>
+      </div>
+      <div style="width: 200px;">
+        <img src="img/gynecomastia.webp" alt="Hair" style="width: 100%; border-radius: 10px;">
+        <p style="margin-top: 10px; font-weight: bold; text-align: center;">Gynecomastia</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<style>
+  .service-card {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.4s ease;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+
+  }
+
+  .card-1:hover {
+    background-image: url('img/card\ nose.jpg'); /* Rhinoplasty */
+     background-size: cover;
+    background-position: center;
+  }
+
+  .card-2:hover {
+    background-image: url('img/card\ chest.webp'); /* Gynaecomastia */
+     background-size: cover;
+    background-position: center;
+  }
+
+  .card-3:hover {
+    background-image: url('img/card\ eye.jpg'); /* Lipoma Removal */
+     background-size: cover;
+    background-position: center;
+  }
+
+  .card-4:hover {
+    background-image: url('img/card\ eye.jpg'); /* Ophthalmology */
+     background-size: cover;
+    background-position: center;
+  }
+
+  .icon-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 12px auto;
+    background-color: #e0f2ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<section id="doctor-consultation-section" style="
+  background-image: url('img/treatment background.jpg'); 
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  position: relative;
+  z-index: 1;
+">
+  <div style="
+    max-width: 1200px;
+    margin: auto;
+    background-color:#d4e6fc;
+    border-radius: 20px;
+    padding: 40px;
+  ">
+    <h2 style="text-align: center; font-size: 28px; font-weight: 600; color: #000; text-shadow: 1px 1px 3px rgba(0, 123, 255, 0.3);">
+      What We Offer
+    </h2>
+    <h1 style="text-align: center; font-size: 35px; margin-bottom: 40px; font-weight: 600; color: #000; text-shadow: 1px 1px 3px rgba(0, 123, 255, 0.3);">
+      We Are Experts In
+    </h1>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+
+      <!-- Card 1 -->
+      <div class="service-card card-1"  id="rhinoplasty">
+        <div class="icon-container">
+          <img src="img/nose.png" alt="Rhinoplasty" style="height: 40px; ">
+        </div>
+        <h3 style="font-size: 18px; margin-bottom: 10px; color: #25588f;">Rhinoplasty</h3>
+        <p style="font-size: 16px; color: #666;">
+          We provide <br> comprehensive <br>rhinoplasty services, <br>ensuring meticulous <br> documentation and <br> prioritizing client <br> satisfaction throughout <br> the process.
+        </p>
+        <a href="#" id="rhinoplastyReadMoreBtn" class="read-more-btn">Read More</a>
+
+      </div>
+      <div id="rhinoplastyDetails" style="display: none; margin-top: 20px; padding: 20px; background-color: #f9f9f9; border-radius: 10px; border: 1px solid #ddd;">
+  <h2>Rhinoplasty (Nose Reshaping Surgery)</h2>
+  <p><strong>What is Rhinoplasty?</strong><br>
+    Rhinoplasty, or a "nose job," is a cosmetic surgery that changes the shape or size of your nose. It's a popular procedure that can improve the overall balance of your face or fix breathing issues caused by the nose’s internal structure.
+  </p>
+  <img src="img/result.jpg" alt="Before and after Rhinoplasty" style="width: 100%; max-width: 600px;">
+
+  <p><strong>Why Consider Rhinoplasty?</strong></p>
+  <ul>
+    <li>✔ Adjusting the size or shape of the nose</li>
+    <li>✔ Enlarged or drooping nasal tips</li>
+    <li>✔ Changing the width of the nose or nostrils</li>
+    <li>✔ Smoothing out a bump or correcting a crooked nose</li>
+    <li>✔ Fixing a deviated septum to improve breathing</li>
+  </ul>
+
+  <h3>Techniques:</h3>
+  <p><strong>Open Rhinoplasty:</strong> The surgeon makes a small cut between the nostrils to lift the skin and reshape the nose.</p>
+  <p><strong>Closed Rhinoplasty:</strong> All cuts are made inside the nose, so no visible scars remain.</p>
+
+  <p style="background-color: #eaf3fc; padding: 10px; border-left: 4px solid #007bff;">
+    The procedure takes around 2–3 hours and is done under anesthesia to make you comfortable.
+  </p>
+
+  <h3>Recovery</h3>
+  <p>After surgery, there may be swelling and bruising around your nose and eyes. A splint is usually placed on the nose for about a week to support the new shape. You can return to normal activities in 1–2 weeks, but it can take a few months for all the swelling to go down and the final results to show.</p>
+
+  <h3>Benefits of Rhinoplasty:</h3>
+  <ul>
+    <li>✔ Enhances facial appearance</li>
+    <li>✔ Increases self-confidence</li>
+    <li>✔ Corrects breathing difficulties</li>
+  </ul>
+</div>
+
+      <!-- Card 2 -->
+      <div class="service-card card-2" id="gynaecomastia">
+        <div class="icon-container">
+          <img src="img/chest.png" alt="Gynaecomastia" style="height: 40px;">
+        </div>
+        <h3 style="font-size: 18px; margin-bottom: 10px; color: #25588f;">Gynaecomastia</h3>
+        <p style="font-size: 16px; color: #666;">
+          We offer complete <br>gynaecomastia treatment,<br> ensuring thorough <br>documentation and <br>prioritizing client <br>satisfaction at every <br>stage.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card card-3" id="lipoma">
+        <div class="icon-container">
+          <img src="img/nose.png" alt="Lipoma Removal" style="height: 40px;">
+        </div>
+        <h3 style="font-size: 18px; margin-bottom: 10px; color: #25588f;">Lipoma Removal</h3>
+        <p style="font-size: 16px; color: #666;">
+          We provide comprehensive lipoma <br> removal services, <br>ensuring detailed <br>documentation and <br>prioritizing client <br>satisfaction throughout <br>the process.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card card-4" id="ophthalmology">
+        <div class="icon-container">
+          <img src="img/body-parts.png" alt="Ophthalmology" style="height: 40px;">
+        </div>
+        <h3 style="font-size: 18px; margin-bottom: 10px; color: #25588f;">Ophthalmology</h3>
+        <p style="font-size: 16px; color: #666;">
+          We offer comprehensive <br> cataract removal <br>services, ensuring <br>detailed documentation <br>and prioritizing patient <br>satisfaction throughout <br>the project.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section style="display: flex; align-items: center; justify-content: space-between; padding: 60px 20px; max-width: 1200px; margin: auto; flex-wrap: wrap;">
+  
+  <!-- Image Side (you'll fill the image yourself) -->
+  <div style="flex: 1 1 45%; text-align: center;">
+    <img src="img/clinic trtmnt.jpg" alt="Clinic Image" style="max-width: 100%; height: auto;">
+  </div>
+
+  <!-- Text Side -->
+  <div style="flex: 1 1 50%; padding-left: 30px;">
+
+    <h2 style="font-size: 32px; font-weight: bold; color: #1f2a37; margin-bottom: 10px;">
+      Transform Your Look <br> with Surgical Services
+    </h2>
+
+    <div style="width: 60px; height: 3px; background-color: #d62828; margin: 10px 0;"></div>
+
+    <p style="font-size: 16px; color: #4b5563; line-height: 1.7; margin-bottom: 20px;">
+      Surgery Saathi, a top cosmetic and plastic surgery clinic in India, offers expert treatments for <strong style="color:#2563eb;">facial rejuvenation</strong> and <strong style="color:#2563eb;">body contouring</strong>, helping you <strong style="color:#2563eb;">look</strong> and feel youthful with exceptional care and results.
+    </p>
+
+    <!-- Services Grid -->
+    <div style="display: flex; flex-wrap: wrap; gap: 10px 40px; font-size: 16px; color: #1e293b; margin-bottom: 30px;">
+      <div style="flex: 1 1 40%;">🔹 Rhinoplasty</div>
+      <div style="flex: 1 1 40%;">🔹 Gynaecomastia</div>
+      <div style="flex: 1 1 40%;">🔹 Lipoma removal</div>
+      <div style="flex: 1 1 40%;">🔹 Ophthalmology</div>
+    </div>
+
+    <!-- Animated Button -->
+   <a href="#clinic-times" class="clinic-times-btn">Clinic Times</a>
+
+  </div>
+</section>
+<div id="clinic-times-section" style="display: none; background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/bkgrnd\ img.jpg') center/cover no-repeat; color: white; padding: 60px 20px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-direction: column; gap: 20px;">
+    <h2 style="font-size: 24px; font-weight: bold;">CLINIC TIMINGS:</h2>
+    <p><strong>Monday – Sunday:</strong> 9:30am – 6:30pm</p>
+
+    <h2 style="font-size: 24px; font-weight: bold;">Address</h2>
+    <p>Sec 43 Gurgaon, Delhi Cantt, Indirapuram Ghaziabad, Noida</p>
+
+    <p><strong>Phone:</strong> +91 8882852726</p>
+    <p><strong>E-mail:</strong> info@surgerysaathi.com</p>
+  </div>
+</div>
+</div>
+<section class="why-choose-section">
+  <div class="why-choose-container">
+
+    <!-- LEFT TEXT SECTION -->
+    <div class="why-choose-left">
+      <h4>WHY CHOOSE SURGERY SAATHI?</h4>
+      <h2>Safe, Expert Cosmetic Surgery You Can Trust</h2>
+      <p>
+        At Surgery Saathi, our focus is on you. From reshaping your nose to flattening your chest or removing lumps,
+        we offer personalized care from experienced doctors to help you feel more confident.
+      </p>
+
+      <div class="features-list">
+        <div class="feature-item">
+          <img src="img/surgeon.png" alt="Skilled Surgeons">
+          <div>
+            <strong>Skilled Surgeons</strong>
+            <p>Our doctors are experts in cosmetic surgery.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <img src="img/advance-technology.png" alt="Technology">
+          <div>
+            <strong>Cutting-Edge Technology</strong>
+            <p>We use the latest tools and techniques to ensure safe surgeries.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <img src="img/24-hours-support.png" alt="Support">
+          <div>
+            <strong>Full Support</strong>
+            <p>From first consultation to final check-up, we’re with you all the way.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <img src="img/hospital-building.png" alt="Hospitals">
+          <div>
+            <strong>Safe Hospitals</strong>
+            <p>We only work with the best hospitals for your safety.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE COLLAGE (2 side-by-side + 1 full-width) -->
+    <div class="why-choose-right">
+      <div class="top-row">
+        <img src="img/doctor face.webp" alt="Top Image 1">
+        <img src="img/face feedback.jpg" alt="Top Image 2">
+      </div>
+      <div class="bottom-row">
+        <img src="img/inject face.jpg" alt="Bottom Image">
+      </div>
+    </div>
+
+  </div>
+<section class="before-after-section">
+  <div class="before-after-container">
+    <h2 class="before-after-heading">CLICK BELOW TO SEE BEFORE AND AFTER PROCEDURES</h2>
+    <p class="before-after-description">
+      Surgery Saathi enhances relaxation during recovery from rhinoplasty, Opthalmologist,
+      Hair transplant, gynaecomastia surgery, and lipoma removal, promoting comfort and
+      emotional well-being.
+    </p>
+  </div>
+</section>
+<section class="surgery-services">
+  <div class="service-options">
+    <div class="service-card" data-target="rhinoplasty">Rhinoplasty</div>
+    <div class="service-card" data-target="gynaecomastia">Gynaecomastia</div>
+    <div class="service-card" data-target="lipoma">Lipoma Removal</div>
+    <div class="service-card" data-target="opthalmology">Ophthalmology</div>
+  </div>
+
+  <div class="service-images" id="rhinoplasty" style="display: none;">
+    <img src="img/after8.jpg" alt="Rhinoplasty 1">
+    <img src="img/after 7.jpg" alt="Rhinoplasty 2">
+  </div>
+  <div class="service-images" id="gynaecomastia" style="display: none;">
+    <img src="img/after6.jpg" alt="Gynaecomastia 1">
+    <img src="img/after5.jpg" alt="Gynaecomastia 2">
+  </div>
+  <div class="service-images" id="lipoma" style="display: none;">
+    <img src="img/after4.jpg" alt="Lipoma 1">
+    <img src="img/after3.jpg" alt="Lipoma 2">
+  </div>
+  <div class="service-images" id="opthalmology" style="display: none;">
+    <img src="img/after2.jpg" alt="Opthalmology 1">
+    <img src="img/after 1.jpg" alt="Opthalmology 2">
+  </div>
+</section>
+<section class="photo-gallery-section">
+  <div class="photo-gallery-container">
+    <div class="photo-gallery-left">
+      <h2>View Some<br>amazing photos<br>from the gallery</h2>
+    </div>
+    <div class="photo-gallery-right">
+      <div class="image-card">
+        <img src="img/after8.jpg" alt="Gallery Image 1">
+      </div>
+      <div class="image-card">
+        <img src="img/after2.jpg" alt="Gallery Image 2">
+      </div>
+      <div class="image-card">
+        <img src="img/after4.jpg" alt="Gallery Image 3">
+      </div>
+      <div class="image-card">
+        <img src="img/after6.jpg" alt="Gallery Image 4">
+      </div>
+      <div class="image-card">
+        <img src="img/after5.jpg" alt="Gallery Image 5">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="blog-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-subtitle">Blog and Updates</p>
+      <h2 class="section-title">Get Our Every Single Update</h2>
+    </div>
+    <div class="blog-container">
+      
+      <!-- Blog Card 1 -->
+      <!-- Blog Card 1 with Read More -->
+<div class="blog-card">
+  <img src="img/blog 1.jpg" alt="Blog 1">
+  <div class="blog-info">
+    <p class="blog-date">Oct 06, 2024</p>
+    <h3 class="blog-title">Understanding Rhinoplasty: What You Need to Know About Nose Reshaping Surgery</h3>
+    <p class="blog-text">
+      Rhinoplasty, commonly known as a "nose job," is one of the most popular plastic surgeries
+    </p>
+
+    <!-- Hidden Extended Content -->
+    <div class="more-content" style="display: none;">
+      worldwide, helping individuals refine the appearance of their nose or improve its function. This surgical procedure addresses both cosmetic and medical concerns, allowing patients to achieve a more balanced facial profile or resolve issues such as breathing difficulties. At Surgery Saathi in Gurugram, rhinoplasty is approached with precision and an emphasis on personalized care to ensure each patient’s unique needs are met.
+      <h4>What Is Rhinoplasty?</h4>
+      <p>
+        Rhinoplasty is a surgical procedure designed to reshape the nose by altering the bone, cartilage, or skin.
+        The reasons for considering rhinoplasty vary; some people seek it for cosmetic reasons, others for functional reasons.
+      </p>
+
+      <h4>Types of Rhinoplasty</h4>
+      <p><strong>Open Rhinoplasty:</strong> In open rhinoplasty, a small incision is made at the base of the nose, allowing the surgeon to lift the skin and have better visibility of the nose’s structure. This approach is ideal for more complex cases requiring significant reshaping. Open rhinoplasty provides the surgeon with maximum control and precision, making it suitable for extensive changes and intricate adjustments.</p>
+      <p><strong>Closed Rhinoplasty:</strong> Closed rhinoplasty, also known as endonasal rhinoplasty, involves incisions made within the nostrils, leaving no visible scars. This approach is typically used for minor adjustments and is less invasive than open rhinoplasty. Recovery may be quicker, and there is no visible scarring, making it a popular choice for patients with simpler cosmetic concerns.</p>
+
+      <h4>Benefits</h4>
+      <p>Improved appearance, better breathing, and boosted self-confidence are among the main benefits of rhinoplasty.</p>
+    </div>
+
+    <!-- Read More Button -->
+    <button class="read-more-btn">Read More</button>
+  </div>
+</div>
+
+        
+
+      <!-- Blog Card 2 -->
+      <div class="blog-card">
+        <img src="img/blog 2.avif" alt="Blog 2">
+        <div class="blog-info">
+          <p class="blog-date">Oct 25, 2024</p>
+          <h3 class="blog-title">Understanding the Procedure and Its Effective Treatments by an Expert's</h3>
+          <p class="blog-text">When it comes to undergoing a surgical procedure, particularly plastic surgery, understanding...</p>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="blog-card">
+        <img src="img/blog 3.jpg" alt="Blog 3">
+        <div class="blog-info">
+          <p class="blog-date">Oct 27, 2024</p>
+          <h3 class="blog-title">Why You Need a Plastic Surgeon: Understanding the Benefits of Specialized Care</h3>
+          <p class="blog-text">Plastic surgery has grown in popularity and versatility over recent decades, catering......</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <script src="script.js"></script>
+  
+</body>
+</html>
